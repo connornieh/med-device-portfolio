@@ -1,78 +1,6 @@
 <template>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
-    <p class="text">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
-      from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
-      I am passionate about applying my strong background in biomedical research and expertise 
-      in the design process to create patient-driven innovations with impactful clinical 
-      applications. My goal is to contribute to a healthcare landscape that is not only more 
-      effective but also more inclusive, using technology as a tool to drive health equity 
-      and ensure that high-quality care is accessible to all.
-    </p>
-  </div>
-  <div class="about d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow">
-    <img src="../assets/portrait.jpg" alt="Headshot" class="portrait rounded-4 border"></img>
+  <div class="card d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow-sm">
+    <img src="../assets/portrait.jpg" alt="Headshot" class="photo rounded-4 border"></img>
     <p class="text">
       &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Connor, a bioengineer with a B.S. in Bioengineering 
       from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
@@ -86,8 +14,12 @@
 </template>
 
 <style scoped>
-  .portrait {
+  .photo {
     width: 40%;
+  }
+
+  .card {
+    flex-direction: row;
   }
 
   .text {
@@ -96,28 +28,23 @@
   }
 
   @media (min-width: 1000px) {
-    .portrait {
+    .photo {
       width: 30%;
-    }
-    .text {
-      font-size: 1.2rem;
-      font-weight: 300;
     }
   }
 
   @media (min-width: 1400px) {
-    .portrait {
+    .photo {
       width: 20%;
     }
   }
 
   @media (max-width: 800px) {
-    .about {
+    .card {
       flex-direction: column;
     }
-    .portrait {
+    .photo {
       width: 75%;
     }
   }
 </style>
-

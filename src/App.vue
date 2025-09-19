@@ -4,17 +4,37 @@ import Devices from './components/Devices.vue'
 import Research from './components/Research.vue'
 import ResumeModal from './components/ResumeModal.vue'
 import { ref } from 'vue'
+
 const activeTab = ref('home')
 const showMobileMenu = ref(false)
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })
+}
+
+const setActiveTab = (tab) => {
+  activeTab.value = tab
+  setTimeout(() => {scrollToTop()}, 50)
+}
+
+const setActiveTabMobile = (tab) => {
+  activeTab.value = tab
+  showMobileMenu.value = false
+  setTimeout(() => {scrollToTop()}, 50)
+}
 </script>
 
 <template>
   <header style="height: 5rem;" :class="['d-flex', 'justify-content-between', 'px-4', 'align-items-center', 'bg-white', 'sticky-top', { 'shadow-sm': !showMobileMenu, 'rounded-4': !showMobileMenu }]">
-    <h4 @click="activeTab = 'home'; window.scrollTo({ top: 0, behavior: 'smooth' })" class="fw-normal" role="button">Connor Nieh</h4>
+    <h4 @click="setActiveTab('home')" class="fw-normal" role="button">Connor Nieh</h4>
     <nav class="d-none d-md-flex gap-2">
-      <button @click="activeTab = 'home'; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'home' }]">Home</button>
-      <button @click="activeTab = 'devices'; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'devices' }]">Devices</button>
-      <button @click="activeTab = 'research'; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'research' }]">Research</button>
+      <button @click="setActiveTab('home')" :class="['nav-btn', { active: activeTab === 'home' }]">Home</button>
+      <button @click="setActiveTab('devices')" :class="['nav-btn', { active: activeTab === 'devices' }]">Devices</button>
+      <button @click="setActiveTab('research')" :class="['nav-btn', { active: activeTab === 'research' }]">Research</button>
     </nav>
     <aside class="d-none d-md-flex gap-2 align-items-center">
       <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile">
@@ -30,10 +50,10 @@ const showMobileMenu = ref(false)
       <i v-else class="text-dark bi bi-x fs-1"></i>
     </button>
   </header>
-  <nav style="top: 5rem;" class="position-fixed w-100 align-items-center pb-4 gap-2 rounded-4 shadow-sm bg-white d-flex d-md-none flex-column" :class="{ 'd-none': !showMobileMenu }">
-    <button @click="activeTab = 'home'; showMobileMenu = false; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'home' }]">Home</button>
-    <button @click="activeTab = 'devices'; showMobileMenu = false; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'devices' }]">Devices</button>
-    <button @click="activeTab = 'research'; showMobileMenu = false; window.scrollTo({ top: 0, behavior: 'smooth' })" :class="['nav-btn', { active: activeTab === 'research' }]">Research</button>
+  <nav style="top: 5rem;" class="position-fixed z-1 w-100 align-items-center pb-4 gap-2 rounded-4 shadow-sm bg-white d-flex d-md-none flex-column" :class="{ 'd-none': !showMobileMenu }">
+    <button @click="setActiveTabMobile('home')" :class="['nav-btn', { active: activeTab === 'home' }]">Home</button>
+    <button @click="setActiveTabMobile('devices')" :class="['nav-btn', { active: activeTab === 'devices' }]">Devices</button>
+    <button @click="setActiveTabMobile('research')" :class="['nav-btn', { active: activeTab === 'research' }]">Research</button>
     <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile" class="nav-btn text-decoration-none text-black text-center" @click="showMobileMenu = false">LinkedIn</a>
     <a href="mailto:connor.nieh@duke.edu" aria-label="Email profile" class="nav-btn text-decoration-none text-black text-center" @click="showMobileMenu = false">Email</a>
     <button data-bs-toggle="modal" data-bs-target="#resumeModal" class="nav-btn" @click="showMobileMenu = false">Resume</button>

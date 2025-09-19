@@ -9,10 +9,10 @@ const getImageUrl = (imageName) => {
 
 <template>
   <div class="d-flex flex-column gap-4">
-    <div v-for="project in projects" :key="project.title" class="card d-flex align-items-center justify-content-between gap-2 p-4 rounded-5 shadow-sm">
-      <img v-if="project.image" :src="getImageUrl(project.image)" :alt="project.title" class="photo rounded-4 border"/>
-      <div class="content">
-        <h5 class="fw-normal mb-4">{{ project.title }}</h5>
+    <div v-for="project in projects" :key="project.title" class="card d-flex flex-column p-4 rounded-5 shadow-sm">
+      <h5 class="fw-normal mb-4">{{ project.title }}</h5>
+      <div class="content d-flex align-items-center gap-4">
+        <img v-if="project.image" :src="getImageUrl(project.image)" :alt="project.title" class="photo rounded-4 border"/>
         <p class="text">
           {{ project.description }}
         </p>
@@ -20,25 +20,29 @@ const getImageUrl = (imageName) => {
     </div>
   </div>
 </template>
-
 <style scoped>
   .photo {
     width: 40%;
   }
 
-  .card {
-    flex-direction: row;
-  }
-  .content {
-    padding: 1rem
-  }
   .text {
     text-align: justify;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 75%;
   }
 
   @media (min-width: 1000px) {
     .photo {
       width: 30%;
+    }
+    .content {
+    flex-direction: row;
     }
   }
 
@@ -49,11 +53,6 @@ const getImageUrl = (imageName) => {
   }
 
   @media (max-width: 800px) {
-    .card {
-      flex-direction: column;
-    }
-    .photo {
-      width: 75%;
-    }
+
   }
 </style>

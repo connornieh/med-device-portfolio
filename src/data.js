@@ -10,7 +10,7 @@ export const devices = [
   {
     title: 'MII-OCT',
     description: 'As part of my senior design project in the Optical Neural Imaging Lab at UC Riverside, I built a system that integrates optical coherence tomography (OCT) with an upright brightfield microscope to enable multimodal imaging of tissue samples. Alongside my team, I worked through the entire design process of identifying user needs and engineering constraints, researching imaging systems, prototyping optomechanical components, assembling a stable device, and validating optical functions. The project culminated in a functional and impactful medical device that enabled simultaneous brightfield and OCT imaging, which we presented at the UCR Senior Design showcase.',
-    image: 'MII-OCT-pres.png',
+    // image: 'MII-OCT-pres.png',
   },
   {
     title: 'Mindful Matchup',
@@ -22,7 +22,7 @@ export const projects = [
   {
     title: 'Tissue Injury and Mortality Engineering Lab',
     description: 'As an undergraduate researcher at UC Riverside, I investigated the stress tolerance of stem cells with the goal of engineering a more resistant stem-cell therapy. To understand the stress mechanisms of genetically modified stem cells, I utilized confocal imaging and MATLAB simulation models to quantify the localization of Wnt signal pathway transcription cofactors. I also led independent experiments quantifying the toxic responses of genetically modified ASCs to environmental toxins, which I presented at UC Riverside\'s Undergraduate Symposium. This work combined computational modeling with hands-on experimentation to disseminate research findings and contribute to a deeper understanding within regenerative medicine.',
-    image: 'TIME-pres.png',
+    // image: 'TIME-pres.png',
   },
   {
     title: 'Terasaki Institute for Biomedical Innovation',
@@ -31,6 +31,6 @@ export const projects = [
   {
     title: 'Jinkerson Lab',
     description: 'My experiences as an avid scuba diver led me to join a chemical and environmental lab at UC Riverside focused on understanding the mechanisms of coral bleaching and increasing coral stress resilience. Using aseptic, micropipette, and microscopy techniques, I worked with the model organism Aiptasia and transitioned wildtype organisms to aposymbionts for genetic engineering experiments, contributing to environmental bioengineering research.',
-    image: 'terasaki-award.png',
+    // image: 'terasaki-award.png',
   }
 ]

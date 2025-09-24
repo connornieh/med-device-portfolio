@@ -1,14 +1,16 @@
 <script setup>
-import { devices } from '../data';
+// import { devices } from '../data';
 
-// Function to get image URL
-const getImageUrl = (imageName) => {
-  return new URL(`../assets/${imageName}`, import.meta.url).href;
-};
+// // Function to get image URL
+// const getImageUrl = (imageName) => {
+//   return new URL(`../assets/${imageName}`, import.meta.url).href;
+// };
 </script>
 
 <template>
-  <div class="d-flex flex-column gap-4">
+  <h4 class="mb-1 dark fw-light">Medical Devices</h4>
+  <p class="medium fw-light">Click each card to learn more about my projects!</p>
+  <!-- <div class="d-flex flex-column gap-4">
     <div v-for="device in devices" :key="device.title" class="card d-flex flex-column p-4 rounded-5 shadow-sm">
       <h5 class="fw-normal mb-4">{{ device.title }}</h5>
       <div class="content d-flex align-items-center gap-4">
@@ -18,10 +20,11 @@ const getImageUrl = (imageName) => {
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
+
 <style scoped>
-  .photo {
+  /* .photo {
     width: 40%;
   }
 
@@ -54,5 +57,5 @@ const getImageUrl = (imageName) => {
 
   @media (max-width: 800px) {
 
-  }
+  } */
 </style>

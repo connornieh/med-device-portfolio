@@ -1,36 +1,113 @@
 export const devices = [
   {
-    title: 'Duke Design Health',
-    description: 'I am part of an interdisciplinary team developing a medical device to improve the capabilities of stroke patient rehabilitation in a clinical setting. This involves conducting ethnographic research, assessing client needs, and collaborating across engineering and healthcare fields. The project will culminate in a user-centered prototype designed for real-world application.',
+    title: 'InCh',
+    slug: 'inch',
+    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This technology aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. One of the greatest engineering challenges lies in preserving optical stability and functionality while adapting the system for low-cost commercialization.',
+    time: 'September 2025 - Present',
+    tasks: [
+      'Using photoresist to create a novel mold for microfluidic fabrication',
+      'Validating and characterizing sickle cell diagnostics using quantitative phase imaging',
+      'Adapting a quantitative imaging system for low-cost manufacturing',
+      'Designing and constructing an instrument with structural and optical integrity',
+    ],
+    skills: ['Microfluidic Chip Fabrication', 'Fusion360 CAD', 'Opto-Mechanical Prototyping', 'Quantitative Phase Imaging'],
   },
   {
-    title: 'Inch',
-    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This technology aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. One of the greatest engineering challenges lies in preserving optical stability and functionality while adapting the system for low-cost commercialization.',
+    title: 'Duke Design Health',
+    slug: 'duke-design-health',
+    time: 'August 2025 - Present',
+    description: 'I am part of an interdisciplinary team developing a medical device to improve the capabilities of stroke patient rehabilitation in a clinical setting. This involves conducting ethnographic research, assessing client needs, and collaborating across engineering and healthcare fields. The project will culminate in a user-centered prototype designed for real-world application.',
+    tasks: [
+      'Identify user needs for an impactful medical device by shadowing clinicians at Duke Region Hospital',
+      'Design and prototype a functional medical device',
+      'Create a business plan for the device, taking into account regulatory and manufacturing processes',
+    ],
+    skills: ['User-Needs Identification', 'Ethnographic Research', 'Fusion360 CAD', 'Medical Device Prototyping', 'FDA Regulatory Assessments', 'Business Planning'],
+  },
+  {
+    title: 'Cystoscope Redesign',
+    slug: 'cystoscope-redesign',
+    time: 'August 2025 - Present',
+    description: 'This medical device design project is part of the Advanced Design and Manufacturing course at Duke, aimed at designing and modeling a cystoscope. The ongoing goal is to 3-D model a new cystoscope design, taking into consideration device function, industrial design, manufacturing processes, structural integrity, and assembly requirements. From this project, I have strengthened my technical skills in CAD but also gained a greater understanding of the overall design and prototyping process.',
+    tasks: [
+      'Sketching orthogonal and 3D perspectives of a redesigned cystoscope',
+      'Creating 3D models from 2D medical images',
+      'Selecting appropriate device materials to accommodate various manufacturing methods',
+    ],
+    skills: ['Fusion 360', 'Medical Device Prototyping', 'Designing for Manufacturing'],
+    images: ['/research-portfolio/src/assets/cytoscope/cytoscope-half.png', '/research-portfolio/src/assets/cytoscope/cytoscope-whole.png'],
   },
   {
     title: 'MII-OCT',
-    description: 'As part of my senior design project in the Optical Neural Imaging Lab at UC Riverside, I built a system that integrates optical coherence tomography (OCT) with an upright brightfield microscope to enable multimodal imaging of tissue samples. Alongside my team, I worked through the entire design process of identifying user needs and engineering constraints, researching imaging systems, prototyping optomechanical components, assembling a stable device, and validating optical functions. The project culminated in a functional and impactful medical device that enabled simultaneous brightfield and OCT imaging, which we presented at the UCR Senior Design showcase.',
-    // image: 'MII-OCT-pres.png',
+    slug: 'mii-oct',
+    time: 'September 2024 - June 2025',
+    description: 'As part of my senior design project in the Optical Neural Imaging Lab at UC Riverside, I built a system that integrates optical coherence tomography (OCT) with an upright brightfield microscope to enable multimodal imaging of tissue samples. This advancement enhances imaging efficiency, improves spatial alignment, and streamlines data acquisition, providing researchers with a more effective tool for comprehensive tissue analysis. The project culminated in a functional and impactful medical device that enabled simultaneous brightfield and OCT imaging, which we presented at the UCR Senior Design showcase.',
+    tasks: [
+      'Identify user needs, addressable market, and design specifications',
+      'Research imaging systems and the optical setup necessary to achieve the performance criteria and overcome engineering constraints',
+      'Prototype opto-mechanical components with accurate tolerance and precision',
+      'Utilize iterative prototyping to construct a stable device',
+      'Conduct statistical validations for optical functions and design specifications for each component',
+    ],
+    skills: ['Optical Coherence Tomography', 'SolidWorks CAD', 'Opto-Mechanical Prototyping', 'MATLAB', 'Optics Alignment', 'Component Validation', 'FDA Regulatory Assessment'],
+    images: ['/research-portfolio/src/assets/MII-OCT/MII-OCT-device.png', '/research-portfolio/src/assets/MII-OCT/MII-OCT-poster.jpg', '/research-portfolio/src/assets/MII-OCT/MII-OCT-pres.png'],
   },
   {
     title: 'Mindful Matchup',
+    slug: 'mindful-matchup',
+    time: 'June 2023 - July 2023',
     description: 'As part of Keck Graduate Institute\'s Medical Device Development Internship, I collaborated with a dynamic team to design, manufacture, and code an interactive device aimed at increasing neuroplasticity in early-stage dementia patients. I contributed expertise in Python-based user interfaces, electrical engineering, and iterative prototyping to deliver a functional and impactful prototype. This project\'s greatest challenge was optimizing the interactions of all components to meet stringent design specifications and user considerations.',
+    tasks: [
+      'Conduct background research on dementia treatment and progression',
+      'CAD modeling a patient-focused device',
+      'Manufacturing and assembling a function device using 3-D printing, resin printing, and laser cutting',
+      'Using Python to create a customizable game and user interface',
+    ],
+    skills: ['Python', 'Device Prototyping', 'GitHub', '3-D and Resin Printing', 'Soldering', 'Electrical Circuit Construction', 'OnShape CAD', 'Kivy'],
+    images: ['/research-portfolio/src/assets/mindful-matchup/device.jpg', '/research-portfolio/src/assets/mindful-matchup/wiring.png'],
   },
 ]
 
-export const projects = [
-  {
-    title: 'Tissue Injury and Mortality Engineering Lab',
-    description: 'As an undergraduate researcher at UC Riverside, I investigated the stress tolerance of stem cells with the goal of engineering a more resistant stem-cell therapy. To understand the stress mechanisms of genetically modified stem cells, I utilized confocal imaging and MATLAB simulation models to quantify the localization of Wnt signal pathway transcription cofactors. I also led independent experiments quantifying the toxic responses of genetically modified ASCs to environmental toxins, which I presented at UC Riverside\'s Undergraduate Symposium. This work combined computational modeling with hands-on experimentation to disseminate research findings and contribute to a deeper understanding within regenerative medicine.',
-    // image: 'TIME-pres.png',
-  },
+export const research = [
   {
     title: 'Terasaki Institute for Biomedical Innovation',
-    description: 'Through this internship, I engaged in high-level research assessing the applications of organoids and micro-organospheres in precision medicine and oncology research, all while gaining perspective into the innovation process of translational research. During my 12-week internship, I engaged in several projects with vast clinical and entrepreneurial implications. These experiments included conducting high-throughput characterization of IPSC-derived hepatocyte organoids, identifying the most physiologically relevant 3-D extracellular environments for drug delivery in micro-organoids, and creating drug assays that utilize patient-derived microtumors.   My work culminated in a final presentation in which I discussed my research on novel disease modeling and cell-based diagnostic applications of organoid technologies.',
+    slug: 'terasaki-institute',
+    time: 'June 2024 - September 2024',
+    description: 'Through this internship, I engaged in high-level research assessing the applications of organoids and micro-organospheres in precision medicine and oncology, while gaining insight into the innovation process of translational research. During my 12-week internship, I engaged in several projects with vast clinical and entrepreneurial implications. My work culminated in a final presentation in which I discussed my research on novel disease modeling and cell-based diagnostic applications of organoid technologies.',
+    tasks: [
+      'Conducting high-throughput characterization of IPSC-derived hepatocyte organoids',
+      'Identifying the most physiologically relevant 3-D extracellular environments for drug delivery in cancerous micro-organoids',
+      'Creating drug assays that utilize patient-derived microtumors',
+      'Characterizing the mechanical properties of hanging drop culture models',
+    ],
+    skills: ['3-D Cell Culturing', 'Primary Sample Processing', 'PCR', 'DNA/RNA Isolation', 'ELISA', 'Fluorescence Microscopy', 'IPSC Differentiation', 'Organoid Characterization'],
+    images: ['/research-portfolio/src/assets/terasaki/terasaki-award.png', '/research-portfolio/src/assets/terasaki/terasaki-pres.png'],
+  },
+  {
+    title: 'Tissue Injury and Mortality Engineering Lab',
+    slug: 'time-lab',
+    time: 'October 2023 - June 2025',
+    description: 'As an undergraduate researcher at UC Riverside, I investigated the stress tolerance of stem cells with the goal of engineering a more resistant stem-cell therapy. To understand the stress mechanisms of genetically modified stem cells, I utilized confocal imaging and MATLAB simulation models to quantify the localization of Wnt signal pathway transcription cofactors. I also led independent experiments quantifying the toxic responses of genetically modified ASCs to environmental toxins, which I presented at UC Riverside\'s Undergraduate Symposium. This work combined computational modeling with hands-on experimentation to disseminate research findings and contribute to a deeper understanding within regenerative medicine.',
+    tasks: [
+      'Culturing, passaging, and freezing genetically modified stem cells',
+      'Conducting lentivirus transduction in ASCs to enable the expression of specific stress-resistant proteins',
+      'Creating and executing experimental plans to investigate stem cell stress tolerance',
+      'Imaging ASC growth in response to induced stress variables',
+      'Utilizing MATLAB to quantify cell counts and illustrate cell growth rate',
+    ],
+    skills: ['Mammalian Cell Culture', 'MATLAB', 'Confocal Microscopy', 'Fluorescence Microscopy', 'DNA Isolation' ],
+    images: ['/research-portfolio/src/assets/TIME/TIME-pres.png', '/research-portfolio/src/assets/TIME/TIME-poster.jpg'],
   },
   {
     title: 'Jinkerson Lab',
+    slug: 'jinkerson-lab',
+    time: 'March 2022 - June 2023',
     description: 'My experiences as an avid scuba diver led me to join a chemical and environmental lab at UC Riverside focused on understanding the mechanisms of coral bleaching and increasing coral stress resilience. Using aseptic, micropipette, and microscopy techniques, I worked with the model organism Aiptasia and transitioned wildtype organisms to aposymbionts for genetic engineering experiments, contributing to environmental bioengineering research.',
-    // image: 'terasaki-award.png',
-  }
+    tasks: [
+      'Transitioned hundreds of aiptasia to aposymbionts using menthol bleaching and cold shocks',
+      'Utilized fluorescence microscopy to measure chlorophyll presence and validate aposymbiotic organisms',
+    ],
+    skills: ['Aseptic Technique', 'Cell Counts', 'Fluorescence Microscopy'],
+    images: ['/research-portfolio/src/assets/jinkerson/jinkerson-graphic1.png', '/research-portfolio/src/assets/jinkerson/jinkerson-graphic2.png'],
+  },
 ]

@@ -33,6 +33,7 @@ export const devices = [
     description: 'This medical device design project is part of the Advanced Design and Manufacturing course at Duke, aimed at designing and modeling a cystoscope. The ongoing goal is to 3-D model a new cystoscope design, taking into consideration device function, industrial design, manufacturing processes, structural integrity, and assembly requirements. From this project, I have strengthened my technical skills in CAD but also gained a greater understanding of the overall design and prototyping process.',
     tasks: [
       'Sketching orthogonal and 3D perspectives of a redesigned cystoscope',
+      'Designing a new cystoscope, including electrical, water, and assembly features',
       'Creating 3D models from 2D medical images',
       'Selecting appropriate device materials to accommodate various manufacturing methods',
     ],

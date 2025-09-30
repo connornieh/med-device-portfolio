@@ -1,16 +1,29 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import resumePdf from '../assets/resume.pdf'
+
+const router = useRouter()
 const showMobileMenu = ref(false)
+
+function navigateToHome() {
+  router.push({ name: 'home' })
+  showMobileMenu.value = false
+}
+
+function navigateToSection(section) {
+  router.push({ name: 'home', hash: `#${section}` })
+  showMobileMenu.value = false
+}
 </script>
 
 <template>
   <header style="height: 5rem;" class="d-flex justify-content-between px-4 align-items-center bg-white sticky-top" :class="{ 'shadow-sm': !showMobileMenu, 'rounded-4': !showMobileMenu }">
     <h5 class="fw-normal dark">Connor Nieh</h5>
     <nav class="d-none d-md-flex gap-2">
-      <a href="#about" class="nav-btn dark">Home</a>
-      <a href="#devices" class="nav-btn dark">Devices</a>
-      <a href="#research" class="nav-btn dark">Research</a>
+      <button @click="navigateToHome" class="nav-btn dark">Home</button>
+      <button @click="navigateToSection('devices')" class="nav-btn dark">Devices</button>
+      <button @click="navigateToSection('research')" class="nav-btn dark">Research</button>
     </nav>
     <aside class="d-none d-md-flex gap-2 align-items-center">
       <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile">
@@ -27,9 +40,9 @@ const showMobileMenu = ref(false)
     </button>
   </header>
   <nav style="top: 5rem;" class="position-fixed z-1 w-100 align-items-center pb-4 gap-2 rounded-bottom-4 shadow-sm bg-white d-flex d-md-none flex-column" :class="{ 'd-none': !showMobileMenu }">
-    <a href="#home" class="nav-btn dark" @click="showMobileMenu = false">Home</a>
-    <a href="#devices" class="nav-btn dark" @click="showMobileMenu = false">Devices</a>
-    <a href="#research" class="nav-btn dark" @click="showMobileMenu = false">Research</a>
+    <button @click="navigateToHome" class="nav-btn dark">Home</button>
+    <button @click="navigateToSection('devices')" class="nav-btn dark">Devices</button>
+    <button @click="navigateToSection('research')" class="nav-btn dark">Research</button>
     <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile" class="nav-btn dark" @click="showMobileMenu = false">LinkedIn</a>
     <a href="mailto:connor.nieh@duke.edu" aria-label="Email profile" class="nav-btn dark" @click="showMobileMenu = false">Email</a>
     <a :href="resumePdf" download="Connor Nieh Resume.pdf" class="nav-btn dark" @click="showMobileMenu = false">Resume</a>

@@ -8,6 +8,3 @@ import FooterBar from './views/FooterBar.vue'
   <router-view class="flex-fill"/>
   <FooterBar />
 </template>
-
-<style scoped>
-</style>

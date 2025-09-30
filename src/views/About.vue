@@ -19,6 +19,19 @@
     current.value = (current.value - 1 + slides.length) % slides.length
   }
 
+  function pauseTimer() {
+    if (timer) {
+      clearInterval(timer)
+      timer = null
+    }
+  }
+
+  function resumeTimer() {
+    if (!timer) {
+      timer = setInterval(next, 5000)
+    }
+  }
+
   onMounted(() => { timer = setInterval(next, 5000) })
   onUnmounted(() => clearInterval(timer))
 </script>
@@ -26,7 +39,7 @@
 <template>
   <div class="hero d-flex flex-column align-items-center h-100">
     <div class="intro-card d-flex w-100 border rounded-4 shadow-sm p-3">
-      <div class="image rounded-3 border ratio ratio-1x1 overflow-hidden">
+      <div class="image rounded-3 border ratio ratio-1x1 overflow-hidden" @mouseenter="pauseTimer" @mouseleave="resumeTimer">
         <img :src="slides[current]" class="w-100 h-100 object-fit-cover" />
         <div class="d-flex align-items-end justify-content-center">
           <div class="d-flex p-4 gap-2">

@@ -13,8 +13,27 @@ export default createRouter({
       props: true,
     },
   ],
-  // scrollBehavior(to) {
-  //   if (to.hash) return { el: to.hash, behavior: 'smooth' }
-  //   return { top: 0 }
-  // },
+  scrollBehavior(to, from, savedPosition) {
+    // Use browser-saved position on back/forward navigation (don't override with hash)
+    if (savedPosition) return savedPosition
+
+    if (to.hash) {
+      const navbar = document.querySelector('header')
+      const navbarHeight = navbar ? navbar.offsetHeight : 96 // fallback
+      const oneRem = parseFloat(getComputedStyle(document.documentElement).fontSize)
+      const totalOffset = navbarHeight + oneRem
+      
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+        top: totalOffset
+      }
+    }
+
+    // Scroll to top when navigating into a detail page
+    if (to.name === 'detail') return { top: 0 }
+
+    // Default: scroll to top
+    return { top: 0 }
+  },
 })

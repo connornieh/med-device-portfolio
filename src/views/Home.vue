@@ -5,7 +5,7 @@ import ResumeModal from './ResumeModal.vue'
 </script>
 
 <template>
-  <main class="flex-fill d-flex flex-column align-items-center py-3 mx-3 border-bottom">
+  <main class="d-flex flex-column align-items-center py-3 mx-3 border-bottom">
     <section id="about">
       <About />
     </section>
@@ -67,7 +67,6 @@ import ResumeModal from './ResumeModal.vue'
 
   section, .line{
     width: 60rem;
-    scroll-margin-top: 6rem;
   }
 
   .time {

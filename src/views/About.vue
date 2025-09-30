@@ -1,14 +1,14 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   import resumePdf from '../assets/resume.pdf'
-  import portrait1 from '../assets/about/portrait.jpg'
-  import portrait2 from '../assets/about/parents.png'
-  import portrait3 from '../assets/about/scuba.png'
-  import portrait4 from '../assets/about/grandma.png'
-  import portrait5 from '../assets/about/mom.png'
-
-
-  const slides = [portrait1, portrait2, portrait3, portrait4, portrait5]
+  
+  const slides = [
+    `${import.meta.env.BASE_URL}images/portrait.jpg`,
+    `${import.meta.env.BASE_URL}images/parents.png`,
+    `${import.meta.env.BASE_URL}images/scuba.png`,
+    `${import.meta.env.BASE_URL}images/grandma.png`,
+    `${import.meta.env.BASE_URL}images/mom.png`
+  ]
   const current = ref(0)
   let timer
 

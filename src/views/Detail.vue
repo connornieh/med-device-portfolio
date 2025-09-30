@@ -7,6 +7,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const route = useRoute()
 const router = useRouter()
 
+const base = import.meta.env.BASE_URL
+
 const type = computed(() => route.params.type)      // 'devices' | 'research'
 const slug = computed(() => decodeURIComponent(route.params.slug))
 
@@ -51,11 +53,11 @@ onUnmounted(() => clearInterval(timer))
       <div class="overview-card d-flex w-100 border rounded-4 shadow-sm p-3 gap-3">
         <div class="image d-flex align-items-center justify-content-center">
           <div v-if="hasImages" class="rounded-3 border ratio ratio-4x3 overflow-hidden" @mouseenter="pauseTimer" @mouseleave="resumeTimer">
-            <img :src="item.images[current]" class="w-100 h-100 object-fit-cover bg-white" />
-            <div v-if="item.images.length > 1" class="d-flex align-items-end justify-content-center">
+            <img :src="base + images[current]" class="w-100 h-100 object-fit-cover bg-white" />
+            <div v-if="images.length > 1" class="d-flex align-items-end justify-content-center">
               <div class="d-flex p-4 gap-2">
                 <button
-                  v-for="(image, index) in item.images"
+                  v-for="(image, index) in images"
                   :key="index"
                   @click="current = index"
                   class="indicator"
@@ -63,7 +65,7 @@ onUnmounted(() => clearInterval(timer))
                 ></button>
               </div>
             </div>
-            <div v-if="item.images.length > 1" class="d-flex justify-content-between">
+            <div v-if="images.length > 1" class="d-flex justify-content-between">
               <button @click="prev" class="p-3 bg-transparent border-0">
                 <i class="bi bi-chevron-left fs-2 medium"></i>
               </button>

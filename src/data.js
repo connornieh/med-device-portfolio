@@ -1,20 +1,3 @@
-// Import all images
-import inchBios from '../assets/InCh/BIOS.jpg'
-import designHealth from '../assets/design-health/design-health.jpg'
-import cytoscopeHalf from '../assets/cytoscope/cytoscope-half.jpg'
-import cytoscopeWhole from '../assets/cytoscope/cytoscope-whole.jpg'
-import miiOctDevice from '../assets/MII-OCT/MII-OCT-device.jpg'
-import miiOctPoster from '../assets/MII-OCT/MII-OCT-poster.jpg'
-import miiOctPres from '../assets/MII-OCT/MII-OCT-pres.jpg'
-import mindfulDevice from '../assets/mindful-matchup/device.jpg'
-import mindfulWiring from '../assets/mindful-matchup/wiring.jpg'
-import terasakiAward from '../assets/terasaki/terasaki-award.jpg'
-import terasakiPres from '../assets/terasaki/terasaki-pres.jpg'
-import timePres from '../assets/TIME/TIME-pres.jpg'
-import timePoster from '../assets/TIME/TIME-poster.jpg'
-import jinkerson1 from '../assets/jinkerson/jinkerson-graphic1.jpg'
-import jinkerson2 from '../assets/jinkerson/jinkerson-graphic2.jpg'
-
 export const devices = [
   {
     title: 'InCh',
@@ -28,7 +11,7 @@ export const devices = [
       'Designing and constructing an instrument with structural and optical integrity',
     ],
     skills: ['Microfluidic Chip Fabrication', 'Fusion360 CAD', 'Opto-Mechanical Prototyping', 'Quantitative Phase Imaging'],
-    images: [inchBios],
+    images: ['images/BIOS.jpg' ],
   },
   {
     title: 'Duke Design Health',
@@ -41,7 +24,7 @@ export const devices = [
       'Create a business plan for the device, taking into account regulatory and manufacturing processes',
     ],
     skills: ['User-Needs Identification', 'Ethnographic Research', 'Fusion360 CAD', 'Medical Device Prototyping', 'FDA Regulatory Assessments' ],
-    images: [designHealth],
+    images: ['images/design-health.jpg' ],
   },
   {
     title: 'Cystoscope Redesign',
@@ -54,7 +37,7 @@ export const devices = [
       'Selecting appropriate device materials to accommodate various manufacturing methods',
     ],
     skills: ['Fusion 360', 'Medical Device Prototyping', 'Designing for Manufacturing'],
-    images: [cytoscopeHalf, cytoscopeWhole],
+    images: ['images/cytoscope-half.jpg', 'images/cytoscope-whole.jpg'],
   },
   {
     title: 'MII-OCT',
@@ -69,7 +52,7 @@ export const devices = [
       'Conduct statistical validations for optical functions and design specifications for each component',
     ],
     skills: ['Optical Coherence Tomography', 'SolidWorks CAD', 'Opto-Mechanical Prototyping', 'MATLAB', 'Optics Alignment', 'Component Validation', 'FDA Regulatory Assessment'],
-    images: [miiOctDevice, miiOctPoster, miiOctPres],
+    images: ['images/MII-OCT-device.jpg', 'images/MII-OCT-poster.jpg', 'images/MII-OCT-pres.jpg'],
   },
   {
     title: 'Mindful Matchup',
@@ -83,7 +66,7 @@ export const devices = [
       'Using Python to create a customizable game and user interface',
     ],
     skills: ['Python', 'Device Prototyping', 'GitHub', '3-D and Resin Printing', 'Soldering', 'Electrical Circuit Construction', 'OnShape CAD', 'Kivy'],
-    images: [mindfulDevice, mindfulWiring],
+    images: ['images/device.jpg', 'images/wiring.jpg'],
   },
 ]
 
@@ -100,7 +83,7 @@ export const research = [
       'Characterizing the mechanical properties of hanging drop culture models',
     ],
     skills: ['3-D Cell Culturing', 'Primary Sample Processing', 'PCR', 'DNA/RNA Isolation', 'ELISA', 'Fluorescence Microscopy', 'IPSC Differentiation', 'Organoid Characterization'],
-    images: [terasakiAward, terasakiPres],
+    images: ['images/terasaki-award.jpg', 'images/terasaki-pres.jpg'],
   },
   {
     title: 'Tissue Injury and Mortality Engineering Lab',
@@ -115,7 +98,7 @@ export const research = [
       'Utilizing MATLAB to quantify cell counts and illustrate cell growth rate',
     ],
     skills: ['Mammalian Cell Culture', 'MATLAB', 'Confocal Microscopy', 'Fluorescence Microscopy', 'DNA Isolation' ],
-    images: [timePres, timePoster],
+    images: ['images/TIME-pres.jpg', 'images/TIME-poster.jpg'],
   },
   {
     title: 'Jinkerson Lab',
@@ -127,6 +110,6 @@ export const research = [
       'Utilized fluorescence microscopy to measure chlorophyll presence and validate aposymbiotic organisms',
     ],
     skills: ['Aseptic Technique', 'Cell Counts', 'Fluorescence Microscopy'],
-    images: [jinkerson1, jinkerson2],
+    images: ['images/jinkerson-graphic1.jpg', 'images/jinkerson-graphic2.jpg'],
   },
 ]

@@ -1,20 +1,21 @@
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import resumePdf from '../assets/resume.pdf'
+  import { ref } from 'vue'
+  import { useRouter } from 'vue-router'
+  import resumePdf from '../assets/resume.pdf'
+  import { handleEmailClick } from '../util/util.js'
 
-const router = useRouter()
-const showMobileMenu = ref(false)
+  const router = useRouter()
+  const showMobileMenu = ref(false)
 
-function navigateToHome() {
-  router.push({ name: 'home' })
-  showMobileMenu.value = false
-}
+  function navigateToHome() {
+    router.push({ name: 'home' })
+    showMobileMenu.value = false
+  }
 
-function navigateToSection(section) {
-  router.push({ name: 'home', hash: `#${section}` })
-  showMobileMenu.value = false
-}
+  function navigateToSection(section) {
+    router.push({ name: 'home', hash: `#${section}` })
+    showMobileMenu.value = false
+  }
 </script>
 
 <template>
@@ -29,7 +30,7 @@ function navigateToSection(section) {
       <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile">
         <i class="bi bi-linkedin fs-6 p-2 dark"></i>
       </a>
-      <a href="mailto:connor.nieh@duke.edu?subject=Portfolio Inquiry" aria-label="Email profile">
+      <a @click="handleEmailClick();" aria-label="Email profile">
         <i class="bi bi-envelope fs-5 p-2 dark"></i>
       </a>
       <button data-bs-toggle="modal" data-bs-target="#resumeModal" class="nav-btn dark">Resume</button>
@@ -44,7 +45,7 @@ function navigateToSection(section) {
     <button @click="navigateToSection('devices')" class="nav-btn dark">Devices</button>
     <button @click="navigateToSection('research')" class="nav-btn dark">Research</button>
     <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile" class="nav-btn dark" @click="showMobileMenu = false">LinkedIn</a>
-    <a href="mailto:connor.nieh@duke.edu?subject=Portfolio Inquiry" aria-label="Email profile" class="nav-btn dark" @click="showMobileMenu = false">Email</a>
+    <a @click="handleEmailClick(); showMobileMenu = false" aria-label="Email profile" class="nav-btn dark">Email</a>
     <a :href="resumePdf" download="Connor Nieh Resume.pdf" class="nav-btn dark" @click="showMobileMenu = false">Resume</a>
   </nav>
 </template>

@@ -1,9 +1,9 @@
 <script setup>
-import About from './About.vue'
-import { devices, research } from '../data';
-import ResumeModal from './ResumeModal.vue'
-
-const base = import.meta.env.BASE_URL
+  import About from './About.vue'
+  import { devices, research } from '../data';
+  import ResumeModal from './ResumeModal.vue'
+  import EmailModal from './EmailModal.vue'
+  const base = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -54,6 +54,9 @@ const base = import.meta.env.BASE_URL
     </section>
     <div class="modal fade" id="resumeModal">
       <ResumeModal />
+    </div>
+    <div class="modal fade" id="emailModal">
+      <EmailModal />
     </div>
   </main>
 </template>

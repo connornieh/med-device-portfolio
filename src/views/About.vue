@@ -1,6 +1,7 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   import resumePdf from '../assets/resume.pdf'
+  import { handleEmailClick } from '../util/util.js'
   
   const slides = [
     `${import.meta.env.BASE_URL}images/portrait.jpg`,
@@ -76,7 +77,7 @@
     </div>
     <div class="actions w-100 flex-md-grow-1 d-flex justify-content-evenly align-items-center">
       <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile" class="action text-center text-decoration-none bg-white border rounded-4 py-2 px-4 shadow-sm dark" role="button">Connect on LinkedIn!</a>
-      <a href="mailto:connor.nieh@duke.edu?subject=Portfolio Inquiry" aria-label="Email profile" class="action text-center text-decoration-none bg-white border rounded-4 py-2 px-4 shadow-sm dark" role="button">Email Me!</a>
+      <a @click="handleEmailClick();" aria-label="Email profile" class="action text-center text-decoration-none bg-white border rounded-4 py-2 px-4 shadow-sm dark" role="button">Email Me!</a>
       <button data-bs-toggle="modal" data-bs-target="#resumeModal" class="action text-center text-decoration-none bg-white border rounded-4 py-2 px-4 shadow-sm dark d-none d-md-block" role="button">View my Resume!</button>
       <a :href="resumePdf" download="Connor Nieh Resume.pdf" class="action text-center text-decoration-none bg-white border rounded-4 py-2 px-4 shadow-sm dark d-block d-md-none" role="button">View my Resume!</a>
     </div>

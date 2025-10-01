@@ -1,5 +1,6 @@
 <script setup>
-import resumePdf from '../assets/resume.pdf'
+  import resumePdf from '../assets/resume.pdf'
+  import { handleEmailClick } from '../util/util.js'
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import resumePdf from '../assets/resume.pdf'
       <a href="https://www.linkedin.com/in/connor-nieh" target="_blank" aria-label="LinkedIn profile">
         <i class="bi bi-linkedin fs-6 p-2 dark"></i>
       </a>
-      <a href="mailto:connor.nieh@duke.edu" aria-label="Email profile">
+      <a @click="handleEmailClick();" aria-label="Email profile">
         <i class="bi bi-envelope fs-5 p-2 dark"></i>
       </a>
       <button data-bs-toggle="modal" data-bs-target="#resumeModal" class="nav-btn dark d-none d-md-block">Resume</button>

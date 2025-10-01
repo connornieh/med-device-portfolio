@@ -5,7 +5,7 @@ export const devices = [
     time: 'August 2025 - Present',
     description: 'I am part of an interdisciplinary team developing a medical device to improve the capabilities of stroke patient rehabilitation in a clinical setting. This involves conducting ethnographic research, assessing client needs, and collaborating across engineering and healthcare fields. The project will culminate in a user-centered prototype designed for real-world application.',
     tasks: [
-      'Identify user needs for an impactful medical device by shadowing clinicians at Duke Region Hospital',
+      'Identify user needs for an impactful medical device by shadowing and interviewing clinicians at Duke Region Hospital',
       'Design and prototype a functional medical device',
       'Create a business plan for the device, taking into account regulatory and manufacturing processes',
     ],
@@ -15,7 +15,7 @@ export const devices = [
   {
     title: 'Interferometric Chamber (InCh)',
     slug: 'inch',
-    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This Interferometric Chamber (InCh) aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. One of the greatest engineering challenges lies in preserving optical stability and functionality while adapting the system for low-cost commercialization.',
+    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This interferometric chamber aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. One of the greatest engineering challenges lies in preserving optical stability and functionality while adapting the system for low-cost commercialization.',
     time: 'September 2025 - Present',
     tasks: [
       'Use photoresist to create a novel mold for microfluidic fabrication',
@@ -34,20 +34,20 @@ export const devices = [
     tasks: [
       'Sketch orthogonal and 3D perspectives of a redesigned cystoscope',
       'Design a new cystoscope, including electrical, water, and assembly features',
-      'Create 3D models from 2D medical images',
+      'Create 3D CAD models from 2D medical images',
       'Select appropriate device materials to accommodate various manufacturing methods',
     ],
-    skills: ['Fusion 360', 'Medical Device Prototyping', 'Designing for Manufacturing'],
+    skills: ['Fusion 360', 'Medical Device Prototyping', 'Design for Manufacturing', 'Creativity'],
     images: ['images/cytoscope-half.jpg', 'images/cytoscope-whole.jpg'],
   },
   {
-    title: 'MII-OCT',
+    title: 'Microscope Integrated Instrumatation for OCT (MII-OCT)',
     slug: 'mii-oct',
     time: 'September 2024 - June 2025',
     description: 'As part of my senior design project in the Optical Neural Imaging Lab at UC Riverside, I built a system that integrates optical coherence tomography (OCT) with an upright brightfield microscope to enable multimodal imaging of tissue samples. This advancement enhances imaging efficiency, improves spatial alignment, and streamlines data acquisition, providing researchers with a more effective tool for comprehensive tissue analysis. The project culminated in a functional and impactful medical device that enabled simultaneous brightfield and OCT imaging, which we presented at the UCR Senior Design showcase.',
     tasks: [
       'Identified user needs, addressable market, and design specifications',
-      'Researched imaging systems and the optical setup necessary to achieve the performance criteria and overcome engineering constraints',
+      'Researched imaging systems and the optical setup necessary to achieve the specified performance criteria and overcome engineering constraints',
       'Prototyped opto-mechanical components with accurate tolerance and precision',
       'Utilized iterative prototyping to construct a stable device',
       'Conducted statistical validations for optical functions and design specifications for each component',
@@ -63,7 +63,7 @@ export const devices = [
     tasks: [
       'Conducted background research on dementia treatment and progression',
       'CAD modeled a patient-focused device',
-      'Manufactured and assembled a function device using 3-D printing, resin printing, and laser cutting',
+      'Manufactured and assembled a functional device using 3-D printing, resin printing, and laser cutting',
       'Used Python to create a customizable game and user interface',
     ],
     skills: ['Python', 'Device Prototyping', 'GitHub', '3-D and Resin Printing', 'Soldering', 'Electrical Circuit Construction', 'OnShape CAD', 'Kivy', 'Team Collaboration'],
@@ -81,7 +81,7 @@ export const research = [
       'Cultured, passaged, and froze genetically modified stem cells',
       'Conducted lentivirus transduction on ASCs to enable the expression of specific stress-resistant proteins',
       'Planned and executed experimental plans to investigate stem cell stress tolerance',
-      'Imaged ASC growth in response to induced stress variables',
+      'Used confocal fluorescence imaging to assess ASC growth in response to induced stress variables',
       'Utilized MATLAB to quantify cell counts and illustrate cell growth rate',
     ],
     skills: ['Mammalian Cell Culture', 'MATLAB', 'Confocal Microscopy', 'Fluorescence Microscopy', 'DNA Isolation', 'Data Visualization', 'Statistical Analysis', 'Experimental Planning', 'Research Presentation', 'Team Collaboration'],
@@ -94,9 +94,10 @@ export const research = [
     description: 'As a Biomedical Intern, I engaged in high-level research assessing the applications of organoids and micro-organospheres in precision medicine and oncology, while gaining insight into the innovation process of translational research. During this 12-week internship, I engaged in several projects with vast clinical and entrepreneurial implications. My work culminated in a final presentation in which I discussed my research on novel disease modeling and cell-based diagnostic applications of organoid technologies.',
     tasks: [
       'Conducted high-throughput characterization of IPSC-derived hepatocyte organoids',
-      'Identified the most physiologically relevant 3-D extracellular environments for drug delivery in cancerous micro-organoids',
-      'Created drug assays that utilize patient-derived microtumors',
+      'Explored precision medicine applications for micro-organoids cultured in various 3-D extracellular environments',
+      'Validated novel drug assays that utilize patient-derived microtumors',
       'Characterized the mechanical properties of hanging drop culture models',
+      'Documented and organized experimental data in weekly lab progress presentations',
     ],
     skills: ['3-D Cell Culturing', 'Primary Sample Processing', 'PCR', 'DNA/RNA Isolation', 'ELISA', 'Fluorescence Microscopy', 'IPSC Differentiation', 'Organoid Characterization', 'Project Prioritization', 'Experimental Documentation'],
     images: ['images/terasaki-award.jpg', 'images/terasaki-pres.jpg'],

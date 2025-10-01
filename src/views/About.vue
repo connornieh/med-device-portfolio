@@ -66,12 +66,14 @@
         <h4 class="mb-3 dark fw-light">Hey there, I'm Connor 🤙</h4>
         <p class="text fw-light dark" style="text-align: justify;">
           &nbsp;&nbsp;&nbsp;&nbsp;I am a bioengineer currently pursuing a Master of Engineering 
-          degree in Med Tech Design at Duke University, with a B.S. in Bioengineering from UC Riverside. 
+          degree in MedTech Design at Duke University, with a B.S. in Bioengineering from UC Riverside. 
           I am passionate about applying my strong background in biomedical research and expertise 
           in the design process to create patient-driven innovations with impactful clinical 
           applications. My goal is to contribute to a healthcare landscape that is not only more 
           effective but also more inclusive, using technology as a tool to drive health equity 
-          and ensure that high-quality care is accessible to all.
+          and ensure that high-quality care is accessible to all. I look forward to working with 
+          interdisciplinary teams, from clinicians to engineers, to translate unmet clinical needs 
+          into safe and effective healthcare technologies.
         </p>
       </div>
     </div>

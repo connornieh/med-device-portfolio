@@ -4,10 +4,10 @@
   
   const slides = [
     `${import.meta.env.BASE_URL}images/portrait.jpg`,
-    `${import.meta.env.BASE_URL}images/parents.png`,
+    `${import.meta.env.BASE_URL}images/mom.png`,
     `${import.meta.env.BASE_URL}images/scuba.png`,
     `${import.meta.env.BASE_URL}images/grandma.png`,
-    `${import.meta.env.BASE_URL}images/mom.png`
+    `${import.meta.env.BASE_URL}images/parents.png`,
   ]
   const current = ref(0)
   let timer
@@ -64,8 +64,8 @@
       <div class="info">
         <h4 class="mb-3 dark fw-light">Hey there, I'm Connor 🤙</h4>
         <p class="text fw-light dark" style="text-align: justify;">
-          &nbsp;&nbsp;&nbsp;&nbsp;I am a bioengineer with a B.S. in Bioengineering 
-          from UC Riverside, currently pursuing an M.Eng in Med Tech Design at Duke University. 
+          &nbsp;&nbsp;&nbsp;&nbsp;I am a bioengineer currently pursuing a Master of Engineering 
+          degree in Med Tech Design at Duke University, with a B.S. in Bioengineering from UC Riverside. 
           I am passionate about applying my strong background in biomedical research and expertise 
           in the design process to create patient-driven innovations with impactful clinical 
           applications. My goal is to contribute to a healthcare landscape that is not only more 

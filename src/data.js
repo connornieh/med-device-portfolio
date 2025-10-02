@@ -41,7 +41,7 @@ export const devices = [
     images: ['images/cytoscope-half.jpg', 'images/cytoscope-whole.jpg'],
   },
   {
-    title: 'Microscope Integrated Instrumatation for OCT (MII-OCT)',
+    title: 'Microscope Integrated Instrumentation for OCT (MII-OCT)',
     slug: 'mii-oct',
     time: 'September 2024 - June 2025',
     description: 'As part of my senior design project in the Optical Neural Imaging Lab at UC Riverside, I built a system that integrates optical coherence tomography (OCT) with an upright brightfield microscope to enable multimodal imaging of tissue samples. This advancement enhances imaging efficiency, improves spatial alignment, and streamlines data acquisition, providing researchers with a more effective tool for comprehensive tissue analysis. The project culminated in a functional and impactful medical device that enabled simultaneous brightfield and OCT imaging, which we presented at the UCR Senior Design showcase.',

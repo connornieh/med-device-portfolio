@@ -38,7 +38,7 @@ export const devices = [
       'Select appropriate device materials to accommodate various manufacturing methods',
     ],
     skills: ['Fusion 360', 'Medical Device Prototyping', 'Design for Manufacturing', 'Creativity'],
-    images: ['images/cytoscope-half.jpg', 'images/cytoscope-whole.jpg'],
+    images: ['images/cytoscope1.jpg', 'images/cytoscope2.jpg', 'images/cytoscope3.jpg', 'images/cytoscope4.jpg'],
   },
   {
     title: 'Microscope Integrated Instrumentation for OCT (MII-OCT)',

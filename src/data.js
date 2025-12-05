@@ -39,7 +39,20 @@ export const devices = [
       'Calculated the Labor, Burden, and Material costs for manufacturing this device at scale',
     ],
     skills: ['Fusion360 CAD', 'Design for Manufacturing', 'Design for Assembly', 'Finite Element Analysis', 'Medical Device Prototyping'],
-    images: ['images/parkingson_pen_1.jpg', 'images/parkingson_pen_2.jpg', 'images/parkingson_pen_3.jpg'],
+    images: ['images/parkingson_pen_1.png', 'images/parkingson_pen_2.png', 'images/parkingson_pen_3.png', 'images/parkingson_pen_4.png'],
+  },
+      {
+    title: 'Patient-Specific Mitral Valve Ring',
+    slug: 'mitrial-ring',
+    description: 'In this project, I used 3D Slicer to reconstruct a volumetric rendering of a human heart from MRI DICOM data. Based on patient-specific anatomical segmentation, I designed a custom mitral valve ring tailored to the individual’s cardiac geometry, demonstrating the application of personalized medical device design.',
+    time: 'November 2025 - November 2025',
+    tasks: [
+      'Reconstructing volumetric anatomical renderings from MRI images',
+      'Segmenting physiological structures from volumetric rendings',
+      'Creating custom CAD heart valve components that form to anatomical features',
+    ],
+    skills: ['3D Slicer', 'Fusion360 CAD', 'Volumetric Rendering', 'Anatomical Segmentation', 'Medical Device Prototyping'],
+    images: ['images/mitral_valve_1.png', 'images/mitral_valve_2.png', 'images/mitral_valve_3.png'],
   },
   {
     title: 'Cystoscope Redesign',

@@ -39,7 +39,7 @@ export const devices = [
       'Calculated the Labor, Burden, and Material costs for manufacturing this device at scale',
     ],
     skills: ['Fusion360 CAD', 'Design for Manufacturing', 'Design for Assembly', 'Finite Element Analysis', 'Medical Device Prototyping'],
-    images: ['images/parkingson_pen_1.jgp', 'images/parkingson_pen_2.jgp', 'images/parkingson_pen_3.jgp', 'images/parkingson_pen_4.jgp'],
+    images: ['images/parkingson-pen_1.jpg', 'images/parkingson-pen-2.jpg', 'images/parkingson-pen-3.jpg', 'images/parkingson-pen-4.jpg'],
   },
       {
     title: 'Mitral Valve Ring',
@@ -52,7 +52,7 @@ export const devices = [
       'Creating custom CAD heart valve components that form to anatomical features',
     ],
     skills: ['3D Slicer', 'Fusion360 CAD', 'Volumetric Rendering', 'Anatomical Segmentation', 'Medical Device Prototyping'],
-    images: ['images/mitral_valve_1.jgp', 'images/mitral_valve_2.jgp', 'images/mitral_valve_3.jgp'],
+    images: ['images/mitral-valve-1.jpg', 'images/mitral_valve_2.jpg', 'images/mitral_valve_3.jpg'],
   },
   {
     title: 'Cystoscope Redesign',

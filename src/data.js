@@ -42,8 +42,8 @@ export const devices = [
     images: ['images/parkingson_pen_1.png', 'images/parkingson_pen_2.png', 'images/parkingson_pen_3.png', 'images/parkingson_pen_4.png'],
   },
       {
-    title: 'Patient-Specific Mitral Valve Ring',
-    slug: 'mitrial-ring',
+    title: 'Mitral Valve Ring',
+    slug: 'mitral-ring',
     description: 'In this project, I used 3D Slicer to reconstruct a volumetric rendering of a human heart from MRI DICOM data. Based on patient-specific anatomical segmentation, I designed a custom mitral valve ring tailored to the individual’s cardiac geometry, demonstrating the application of personalized medical device design.',
     time: 'November 2025 - November 2025',
     tasks: [

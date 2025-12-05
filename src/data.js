@@ -57,7 +57,7 @@ export const devices = [
   {
     title: 'Cystoscope Redesign',
     slug: 'cystoscope-redesign',
-    time: 'August 2025 - Present',
+    time: 'August 2025 - October 2025',
     description: 'This medical device design project is part of the Advanced Design and Manufacturing course at Duke, aimed at designing and modeling a cystoscope. The ongoing goal is to 3-D model a new cystoscope design, taking into consideration device function, industrial design, manufacturing processes, structural integrity, and assembly requirements. From this project, I have strengthened my technical skills in CAD but also gained a greater understanding of the overall design and prototyping process.',
     tasks: [
       'Sketch orthogonal and 3D perspectives of a redesigned cystoscope',

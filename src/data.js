@@ -52,7 +52,7 @@ export const devices = [
       'Creating custom CAD heart valve components that form to anatomical features',
     ],
     skills: ['3D Slicer', 'Fusion360 CAD', 'Volumetric Rendering', 'Anatomical Segmentation', 'Medical Device Prototyping'],
-    images: ['images/mitral-valve-1.jpg', 'images/mitral-valve-2.jpg', 'images/mitral-valve-3.png'],
+    images: ['images/mitral-ring-1.jpg', 'images/mitral-ring-2.jpg', 'images/mitral-ring-3.png'],
   },
   {
     title: 'Cystoscope Redesign',

@@ -39,7 +39,7 @@ export const devices = [
       'Calculated the Labor, Burden, and Material costs for manufacturing this device at scale',
     ],
     skills: ['Fusion360 CAD', 'Design for Manufacturing', 'Design for Assembly', 'Finite Element Analysis', 'Medical Device Prototyping'],
-    images: ['images/parkingsonpen1.jpg', 'images/parkingsonpen2.jpg', 'images/parkingsonpen3.jpg', 'images/parkingsonpen4.png'],
+    images: ['images/parkinsonpen1.jpg', 'images/parkinsonpen2.jpg', 'images/parkinsonpen3.jpg', 'images/parkinsonpen4.png'],
   },
       {
     title: 'Mitral Valve Ring',

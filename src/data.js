@@ -15,16 +15,17 @@ export const devices = [
   {
     title: 'Interferometric Chamber (InCh)',
     slug: 'inch',
-    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This interferometric chamber aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. One of the greatest engineering challenges lies in preserving optical stability and functionality while adapting the system for low-cost commercialization.',
+    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This interferometric chamber aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. My main tasks involve microfluidic fabrication, flow cytometry imaging, and quantitative phase image processing.',
     time: 'September 2025 - Present',
     tasks: [
-      'Use photoresist to create a novel mold for microfluidic fabrication',
-      'Validate and characterizing sickle cell diagnostics using quantitative phase imaging',
+      'Fabricating microfluidic chips in a clean room',
+      'Creating a reproducible and reliable manufacturing protocol',
       'Adapt a quantitative imaging system for low-cost manufacturing',
+      'Validate and characterize hematological diagnostics using quantitative phase imaging',
       'Design and construct an instrument with structural and optical integrity',
     ],
-    skills: ['Microfluidic Chip Fabrication', 'Fusion360 CAD', 'Opto-Mechanical Prototyping', 'Quantitative Phase Imaging', 'Phase Data Processing', 'Interdisciplinary Research'],
-    images: ['images/BIOS.jpg'],
+    skills: ['Microfluidic Chip Fabrication', 'Solidworks', 'Opto-Mechanical Prototyping', 'Quantitative Phase Imaging', 'Flow Cytometry', 'Quantitative Phase Imaging', 'Phase Data Processing'],
+    images: ['images/inch1.png', 'images/inch2.png'],
   },
     {
     title: 'Parkinson Pen',
@@ -100,6 +101,20 @@ export const devices = [
 ]
 
 export const research = [
+  {
+    title: 'Biomedical Interferometry Optical and Spectroscopy Lab',
+    slug: 'bios-lab',
+    time: 'September 2025 - Present',
+    description: 'As a graduate research assistant in the Biomedical Interferometry Optical and Spectroscopy Lab at Duke University, I work on developing holographic cytometry, a label-free imaging platform for high-throughput single-cell analysis. I help acquire and process quantitative phase data from flow cytometry experiments, ensuring accurate measurement of cellular morphological and biophysical features. I also contribute to computational pipelines that extract optical metrics and support machine-learning–based cell classification. Through this work, I’ve built experience in optical imaging, microfluidics, and quantitative data analysis for biomedical diagnostics.',
+    tasks: [
+      'Microfluidic fabrication of novel flow cytometry chips in a clean room',
+      'Conducting flow cytometry imaging experiments for high-throughput classification of sickle cell disease',
+      'Utilizing a Python pipeline to reconstruct phase profiles and extract biophysical and morphological characteristics of red blood cells',
+      'Developing and validating a low-cost tool for hematological diagnostics',
+    ],
+    skills: ['Microfluidic Chip Fabrication', 'Flow Cytometry', 'Quantitative Phase Imaging', 'Python', 'Phase Data Processing', 'Interdisciplinary Research'],
+    images: ['images/bios.jpg'],
+  },
   {
     title: 'Tissue Injury and Mortality Engineering Lab',
     slug: 'time-lab',

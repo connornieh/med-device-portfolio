@@ -113,7 +113,7 @@ export const research = [
       'Developing and validating a low-cost tool for hematological diagnostics',
     ],
     skills: ['Microfluidic Chip Fabrication', 'Flow Cytometry', 'Quantitative Phase Imaging', 'Python', 'Phase Data Processing', 'Interdisciplinary Research'],
-    images: ['images/bios.jpg'],
+    images: ['images/BIOS.jpg'],
   },
   {
     title: 'Tissue Injury and Mortality Engineering Lab',

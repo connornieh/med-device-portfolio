@@ -15,16 +15,16 @@ export const devices = [
   {
     title: 'Interferometric Chamber (InCh)',
     slug: 'inch',
-    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool using my expertise in opto-mechanical design. This interferometric chamber aims to enhance the visualization of sickle cell disease morphology, to enable high-throughput diagnostics in low-resource healthcare settings. My main tasks involve microfluidic fabrication, flow cytometry imaging, and quantitative phase image processing.',
+    description: 'Working for the Biomedical Interferometry Optical and Spectroscopy Lab at Duke University, I have been tasked with transforming a novel quantitative phase imaging system into a low-cost diagnostic tool. This hematological device utilizes a novel interferometric chamber, which enables the visualization of sickle cell disease morphology and and quantitication of red blood cell biophysical parameters. This label-free flow cytometry system enables high-throughput diagnostics in low-resource healthcare settings. My main tasks involve microfluidic fabrication, flow cytometry imaging, and quantitative phase image processing.',
     time: 'September 2025 - Present',
     tasks: [
-      'Fabricating microfluidic chips in a clean room',
-      'Creating a reproducible and reliable manufacturing protocol',
+      'Fabricate microfluidic chips in a clean room',
+      'Create a reproducible and reliable manufacturing protocol',
       'Adapt a quantitative imaging system for low-cost manufacturing',
       'Validate and characterize hematological diagnostics using quantitative phase imaging',
       'Design and construct an instrument with structural and optical integrity',
     ],
-    skills: ['Microfluidic Chip Fabrication', 'Solidworks', 'Opto-Mechanical Prototyping', 'Quantitative Phase Imaging', 'Flow Cytometry', 'Quantitative Phase Imaging', 'Phase Data Processing'],
+    skills: ['Microfluidic Chip Fabrication', 'Solidworks', 'Opto-Mechanical Prototyping', 'Flow Cytometry', 'Quantitative Phase Imaging', 'Phase Data Processing'],
     images: ['images/inch1.png', 'images/inch2.png'],
   },
     {

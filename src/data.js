@@ -3,13 +3,14 @@ export const devices = [
     title: 'Duke Design Health',
     slug: 'duke-design-health',
     time: 'August 2025 - Present',
-    description: 'I am part of an interdisciplinary team developing a medical device to improve the capabilities of stroke patient rehabilitation in a clinical setting. This involves conducting ethnographic research, assessing client needs, and collaborating across engineering and healthcare fields. The project will culminate in a user-centered prototype designed for real-world application.',
+    description: 'The Duke Design Health Series is a three-semester project-based course that uses industry design principles to identify needs in healthcare and translate them into feasible, user-centered engineering solutions. I have engaged in ethnographic research and clinical shadowing at the Duke pediatric cardiothoracic operating room in order to identify an addressable innovation target. Using root cause and MECE analysis, I am working with an interdisciplinary team to develop a user-centered, clinically applicable device.',
     tasks: [
-      'Identify user needs for an impactful medical device by shadowing and interviewing clinicians at Duke Region Hospital',
+      'Identify user needs for an impactful medical device by shadowing and interviewing cardiothoracic surgeons and clinicians',
+      'Address innovation targets using MECE analysis and competitive landscaping',
       'Design and prototype a functional medical device',
       'Create a business plan for the device, taking into account regulatory and manufacturing processes',
     ],
-    skills: ['User-Needs Identification', 'Ethnographic Research', 'Fusion360 CAD', 'Medical Device Prototyping', 'FDA Regulatory Assessments', 'Team Collaboration'],
+    skills: ['User-Needs Identification', 'Ethnographic Research', 'Fusion360 CAD', 'Medical Device Prototyping', 'Root-Cause Analysis', 'Team Collaboration'],
     images: ['images/design-health.jpg'],
   },
   {
